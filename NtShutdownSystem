@@ -34,7 +34,7 @@ RTLA:                                                   ; Type: byte
         db 74H, 50H, 72H, 69H, 76H, 69H, 6CH, 65H       ; tPrivile
         db 67H, 65H, 00H                                ; ge.
 
-NTRA:                                                   ; Type: byte
+NTSS:                                                   ; Type: byte
         db 4EH, 74H, 53H, 68H, 75H, 74H, 64H, 6FH       ; NtShutdo
         db 77H, 6EH, 53H, 79H, 73H, 74H, 65H, 6DH       ; wnSystem
         db 00H, 00H, 00H                                ; ...
@@ -70,7 +70,7 @@ main:
         lea     rcx, [rel NTDLL]                        ; 005A _ 48: 8D. 0D, 00000000(rel)
         mov     rax, qword [rel __imp_LoadLibraryA]     ; 0061 _ 48: 8B. 05, 00000000(rel)
         call    rax                                     ; 0068 _ FF. D0
-        lea     rdx, [rel NTRA]                         ; 006A _ 48: 8D. 15, 0000001D(rel)
+        lea     rdx, [rel NTSS]                         ; 006A _ 48: 8D. 15, 0000001D(rel)
         mov     rcx, rax                                ; 0071 _ 48: 89. C1
         mov     rax, qword [rel __imp_GetProcAddress]   ; 0074 _ 48: 8B. 05, 00000000(rel)
         call    rax                                     ; 007B _ FF. D0
