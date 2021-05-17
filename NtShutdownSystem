@@ -9,7 +9,13 @@
 ;;  Instruction set: 80386, x64                  ;;
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-BITS 64
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;                !!!WARNING!!!                  ;;
+;;      THIS PROGRAM WILL NOT GRACEFULLY SHUT    ;;
+;;      DOWN YOUR SYSTEM, USE WITH CAUTION       ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+ BITS 64
 
 global main: function
 
