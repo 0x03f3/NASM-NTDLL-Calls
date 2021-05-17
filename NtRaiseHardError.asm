@@ -38,7 +38,6 @@ NTRA:                                                   ; byte
 SECTION .text                                           ; section number 2, code
 
 main:   ; Function begin
-NTRA.text:
         push    rbp                                     ; 0000 _ 55
         mov     rbp, rsp                                ; 0001 _ 48: 89. E5
         sub     rsp, 80                                 ; 0004 _ 48: 83. EC, 50
